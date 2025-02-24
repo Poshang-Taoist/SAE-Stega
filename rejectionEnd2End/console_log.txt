@@ -1,0 +1,1439 @@
+
+(base) C:\Users\Chin_>D:
+
+(base) D:\>conda activate stega3
+
+(stega3) D:\>cd D:\UIR\信息隐藏-从数据的角度研究\StegaText-master-original-version\lyrejection
+
+(stega3) D:\UIR\信息隐藏-从数据的角度研究\StegaText-master-original-version\lyrejection>python main.py
+Binary message: [0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 1, 1, 0, 1, 1, 0, 1]
+Encoding message...
+Dynamic threshold set to: 45.0000
+Dynamic threshold set to: 49.5000
+Dynamic threshold set to: 54.4500
+Dynamic threshold set to: 59.8950
+Dynamic threshold set to: 65.8845
+Dynamic threshold set to: 72.4730
+Dynamic threshold set to: 79.7202
+Dynamic threshold set to: 87.6923
+
+Generated Cover Text:
+By now, many Americans are starting to hear this term in print in reference not only the Affordable HealthCare.Gov provisions and the Supreme court order that halted that measure – a decision likely reached by
+
+Decoding message...
+50 []
+Dynamic threshold set to: 45.0000
+Token 407 rejected during decoding. Skipping...
+Token 3893 rejected during decoding. Skipping...
+Token 8617 rejected during decoding. Skipping...
+Token 2184 rejected during decoding. Skipping...
+Token 1502 rejected during decoding. Skipping...
+Token 784 rejected during decoding. Skipping...
+Token 257 rejected during decoding. Skipping...
+Token 1884 rejected during decoding. Skipping...
+Token 4251 rejected during decoding. Skipping...
+
+Decoded Binary Message:
+[0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 1, 0, 0, 0, 1, 1, 1, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1]
+
+Reconstructed Message:
+Hellè£ogm
+
+Bits per Word: 2.9091
+
+Perplexity (PPL): 38.1394
+
+the average Bits per Word: 2.9091
+
+the average PPL: 38.1394
+
+(stega3) D:\UIR\信息隐藏-从数据的角度研究\StegaText-master-original-version\lyrejection>python test.py
+this i​s a
+
+(stega3) D:\UIR\信息隐藏-从数据的角度研究\StegaText-master-original-version\lyrejection>python test.py
+Traceback (most recent call last):
+  File "test.py", line 3, in <module>
+    print(f"this i{special_sync_token}s a", file=f)
+UnicodeEncodeError: 'gbk' codec can't encode character '\u200b' in position 6: illegal multibyte sequence
+
+(stega3) D:\UIR\信息隐藏-从数据的角度研究\StegaText-master-original-version\lyrejection>python main.py
+Binary message: [0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 1, 1, 0, 1, 1, 0, 1]
+Encoding message...
+Dynamic threshold set to: 55.0000
+Dynamic threshold set to: 60.5000
+Dynamic threshold set to: 66.5500
+Dynamic threshold set to: 73.2050
+Dynamic threshold set to: 80.5255
+Dynamic threshold set to: 88.5781
+
+Generated Cover Text:
+By now, many Americans are starting to hear this term in print in the form of the term neo-Nazi and the resurgence of a term once banned: antisemitism. We hear so well about the rise
+
+Decoding message...
+50 []
+[3886, 783, 11, 867, 3399, 389, 3599, 284, 3285, 428, 3381, 287, 3601, 287, 262, 1296, 286, 262, 3381, 19102, 12, 31343, 290, 262, 39330, 286, 257, 3381, 1752, 9301, 25, 33064, 368, 18937, 13, 775, 3285, 523, 880, 546, 262, 4485]
+
+Decoded Binary Message:
+[0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 1]
+
+Reconstructed Message:
+Hell
+ÀoP|&öw2an
+
+Bits per Word: 2.6667
+
+Perplexity (PPL): 22.4926
+
+the average Bits per Word: 2.6667
+
+the average PPL: 22.4926
+
+(stega3) D:\UIR\信息隐藏-从数据的角度研究\StegaText-master-original-version\lyrejection>python test.py
+                                                 n
+(stega3) D:\UIR\信息隐藏-从数据的角度研究\StegaText-master-original-version\lyrejection>python test.py
+
+(stega3) D:\UIR\信息隐藏-从数据的角度研究\StegaText-master-original-version\lyrejection>python main.py
+Binary message: [0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 1, 1, 0, 1, 1, 0, 1]
+Encoding message...
+Dynamic threshold set to: 55.0000
+Dynamic threshold set to: 60.5000
+Dynamic threshold set to: 66.5500
+Dynamic threshold set to: 73.2050
+Dynamic threshold set to: 80.5255
+Dynamic threshold set to: 88.5781
+
+Generated Cover Text:
+By now, many Americans are starting to hear this term in print in the form of the term neo-Nazi and the resurgence of a term once banned: antisemitism. We hear so well about the rise
+
+Decoding message...
+50 []
+By now, many Americans are starting to hear this term in print in the form of the term neo-Nazi and the resurgence of a term once banned: antisemitism. We hear so well about the rise
+
+Decoded Binary Message:
+[0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 1]
+
+Reconstructed Message:
+Hell
+ÀoP|&öw2an
+
+Bits per Word: 2.6667
+
+Perplexity (PPL): 22.4926
+
+the average Bits per Word: 2.6667
+
+the average PPL: 22.4926
+
+(stega3) D:\UIR\信息隐藏-从数据的角度研究\StegaText-master-original-version\lyrejection>python main.py
+Binary message: [0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 1, 1, 0, 1, 1, 0, 1]
+Encoding message...
+Dynamic threshold set to: 55.0000
+Dynamic threshold set to: 60.5000
+Dynamic threshold set to: 66.5500
+Dynamic threshold set to: 73.2050
+Dynamic threshold set to: 80.5255
+Dynamic threshold set to: 88.5781
+[3886, 783, 11, 867, 3399, 389, 3599, 284, 3285, 428, 3381, 287, 3601, 287, 262, 1296, 286, 262, 3381, 19102, 12, 31343, 290, 262, 39330, 286, 257, 3381, 1752, 9301, 25, 33064, 368, 18937, 13, 775, 3285, 523, 880, 546, 262, 4485]
+
+Generated Cover Text:
+By now, many Americans are starting to hear this term in print in the form of the term neo-Nazi and the resurgence of a term once banned: antisemitism. We hear so well about the rise
+
+Decoding message...
+50 []
+
+Decoded Binary Message:
+[0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 1]
+
+Reconstructed Message:
+Hell
+ÀoP|&öw2an
+
+Bits per Word: 2.6667
+
+Perplexity (PPL): 22.4926
+
+the average Bits per Word: 2.6667
+
+the average PPL: 22.4926
+
+(stega3) D:\UIR\信息隐藏-从数据的角度研究\StegaText-master-original-version\lyrejection>python main.py
+Binary message: [0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 1, 1, 0, 1, 1, 0, 1]
+Encoding message...
+Dynamic threshold set to: 55.0000
+Dynamic threshold set to: 60.5000
+Dynamic threshold set to: 66.5500
+Dynamic threshold set to: 73.2050
+Dynamic threshold set to: 80.5255
+Dynamic threshold set to: 88.5781
+
+Generated Cover Text:
+By now, many Americans are starting to hear this term in print in the form of the term neo-Nazi and the resurgence of a term once banned: antisemitism. We hear so well about the rise
+
+Decoding message...
+50 []
+
+Decoded Binary Message:
+[0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 1]
+
+Reconstructed Message:
+Hell
+ÀoP|&öw2an
+
+Bits per Word: 2.6667
+
+Perplexity (PPL): 22.4926
+
+the average Bits per Word: 2.6667
+
+the average PPL: 22.4926
+
+(stega3) D:\UIR\信息隐藏-从数据的角度研究\StegaText-master-original-version\lyrejection>python main.py
+Binary message: [0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 1, 1, 0, 1, 1, 0, 1]
+Encoding message...
+Dynamic threshold set to: 55.0000
+Dynamic threshold set to: 60.5000
+Dynamic threshold set to: 66.5500
+Dynamic threshold set to: 73.2050
+Dynamic threshold set to: 80.5255
+Dynamic threshold set to: 88.5781
+
+Generated Cover Text:
+By now, many Americans are starting to hear this term in print in the form of the term neo-Nazi and the resurgence of a term once banned: antisemitism. We hear so well about the rise
+
+Decoding message...
+50 []
+
+Decoded Binary Message:
+[0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 1]
+
+Reconstructed Message:
+Hell
+ÀoP|&öw2an
+
+Bits per Word: 2.6667
+
+Perplexity (PPL): 22.4926
+
+the average Bits per Word: 2.6667
+
+the average PPL: 22.4926
+
+(stega3) D:\UIR\信息隐藏-从数据的角度研究\StegaText-master-original-version\lyrejection>python main.py
+Binary message: [0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 1, 1, 0, 1, 1, 0, 1]
+Encoding message...
+By now, many Americans areqw!
+Dynamic threshold set to: 55.0000
+Dynamic threshold set to: 60.5000
+Dynamic threshold set to: 66.5500
+Dynamic threshold set to: 73.2050
+Dynamic threshold set to: 80.5255
+Dynamic threshold set to: 88.5781
+
+Generated Cover Text:
+By now, many Americans are starting to hear this term in print in the form of the term neo-Nazi and the resurgence of a term once banned: antisemitism. We hear so well about the rise
+
+Decoding message...
+50 []
+
+Decoded Binary Message:
+[0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 1]
+
+Reconstructed Message:
+Hell
+ÀoP|&öw2an
+
+Bits per Word: 2.6667
+
+Perplexity (PPL): 22.4926
+
+the average Bits per Word: 2.6667
+
+the average PPL: 22.4926
+
+(stega3) D:\UIR\信息隐藏-从数据的角度研究\StegaText-master-original-version\lyrejection>python test.py
+Traceback (most recent call last):               n
+  File "test.py", line 37, in <module>
+    marked_text = tokenizer.convert_tokens_to_string(tokens)
+  File "D:\ProgramData\conda\envs\stega3\lib\site-packages\transformers\tokenization_gpt2.py", line 242, in convert_tokens_to_string
+    text = bytearray([self.byte_decoder[c] for c in text]).decode("utf-8", errors=self.errors)
+  File "D:\ProgramData\conda\envs\stega3\lib\site-packages\transformers\tokenization_gpt2.py", line 242, in <listcomp>
+    text = bytearray([self.byte_decoder[c] for c in text]).decode("utf-8", errors=self.errors)
+KeyError: '\u200b'
+
+(stega3) D:\UIR\信息隐藏-从数据的角度研究\StegaText-master-original-version\lyrejection>python main.py
+Binary message: [0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 1, 1, 0, 1, 1, 0, 1]
+Encoding message...
+Dynamic threshold set to: 55.0000
+Dynamic threshold set to: 60.5000
+Dynamic threshold set to: 66.5500
+Dynamic threshold set to: 73.2050
+Dynamic threshold set to: 80.5255
+Dynamic threshold set to: 88.5781
+
+Generated Cover Text:
+ByĠnow,ĠmanyĠAmericansĠareĠstartingĠtoĠhearĠthisĠtermĠinĠprintĠinĠtheĠformĠofĠtheĠtermĠneo-NaziĠandĠtheĠresurgenceĠofĠaĠtermĠonceĠbanned:Ġantisemitism.ĠWeĠhearĠsoĠwellĠaboutĠtheĠrise
+
+Decoding message...
+50 []
+
+Decoded Binary Message:
+[0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 1]
+
+Reconstructed Message:
+Hell
+ÀoP|&öw2an
+
+Bits per Word: 0.8727
+
+Perplexity (PPL): 22.4926
+
+the average Bits per Word: 0.8727
+
+the average PPL: 22.4926
+
+(stega3) D:\UIR\信息隐藏-从数据的角度研究\StegaText-master-original-version\lyrejection>python main.py
+Binary message: [0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 1, 1, 0, 1, 1, 0, 1]
+Encoding message...
+Dynamic threshold set to: 55.0000
+Dynamic threshold set to: 60.5000
+Dynamic threshold set to: 66.5500
+Dynamic threshold set to: 73.2050
+Dynamic threshold set to: 80.5255
+Dynamic threshold set to: 88.5781
+
+Generated Cover Text:
+ByĠnow,ĠmanyĠAmericansĠareĠstartingĠtoĠhearĠthisĠtermĠinĠprintĠinĠtheĠformĠofĠtheĠtermĠneo-NaziĠandĠtheĠresurgenceĠofĠaĠtermĠonceĠbanned:Ġantisemitism.ĠWeĠhearĠsoĠwellĠaboutĠtheĠrise
+
+Decoding message...
+50 []
+
+Decoded Binary Message:
+[0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 1]
+
+Reconstructed Message:
+Hell
+ÀoP|&öw2an
+
+Bits per Word: 0.8727
+
+Perplexity (PPL): 22.4926
+
+the average Bits per Word: 0.8727
+
+the average PPL: 22.4926
+
+(stega3) D:\UIR\信息隐藏-从数据的角度研究\StegaText-master-original-version\lyrejection>python main.py
+Binary message: [0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 1, 1, 0, 1, 1, 0, 1]
+Encoding message...
+Dynamic threshold set to: 55.0000
+Dynamic threshold set to: 60.5000
+Dynamic threshold set to: 66.5500
+Dynamic threshold set to: 73.2050
+Dynamic threshold set to: 80.5255
+Dynamic threshold set to: 88.5781
+
+Generated Cover Text:
+|By||Ġnow||,||Ġmany||ĠAmericans||Ġare||Ġstarting||Ġto||Ġhear||Ġthis||Ġterm||Ġin||Ġprint||Ġin||Ġthe||Ġform||Ġof||Ġthe||Ġterm||Ġneo||-||Nazi||Ġand||Ġthe||Ġresurgence||Ġof||Ġa||Ġterm||Ġonce||Ġbanned||:||Ġantis||em||itism||.||ĠWe||Ġhear||Ġso||Ġwell||Ġabout||Ġthe||Ġrise|
+
+Decoding message...
+50 []
+
+Decoded Binary Message:
+[0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 1]
+
+Reconstructed Message:
+Hell
+ÀoP|&öw2an
+
+Bits per Word: 0.6275
+
+Perplexity (PPL): 22.4926
+
+the average Bits per Word: 0.6275
+
+the average PPL: 22.4926
+
+(stega3) D:\UIR\信息隐藏-从数据的角度研究\StegaText-master-original-version\lyrejection>python main.py
+Binary message: [0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 1, 1, 0, 1, 1, 0, 1]
+Encoding message...
+Dynamic threshold set to: 55.0000
+Dynamic threshold set to: 60.5000
+Dynamic threshold set to: 66.5500
+Dynamic threshold set to: 73.2050
+Dynamic threshold set to: 80.5255
+Dynamic threshold set to: 88.5781
+
+Generated Cover Text:
+By now, many Americans are starting to hear this term in print in the form of the term neo-Nazi and the resurgence of a term once banned: antisemitism. We hear so well about the rise
+
+Decoding message...
+50 []
+
+Decoded Binary Message:
+[0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 1]
+
+Reconstructed Message:
+Hell
+ÀoP|&öw2an
+
+Bits per Word: 2.6667
+
+Perplexity (PPL): 22.4926
+
+the average Bits per Word: 2.6667
+
+the average PPL: 22.4926
+
+(stega3) D:\UIR\信息隐藏-从数据的角度研究\StegaText-master-original-version\lyrejection>python main.py
+Binary message: [0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 1, 1, 0, 1, 1, 0, 1]
+Encoding message...
+Dynamic threshold set to: 55.0000
+Dynamic threshold set to: 60.5000
+Dynamic threshold set to: 66.5500
+Dynamic threshold set to: 73.2050
+Dynamic threshold set to: 80.5255
+Dynamic threshold set to: 88.5781
+
+Generated Cover Text:
+By now, many Americans are starting to hear this term in print in the​ form​ of​ the​ term neo-​Nazi​ and the resurgence of​ a term once banned: antisem​itism​.​ We hear so well about​ the​ rise
+
+Decoding message...
+50 []
+
+Decoded Binary Message:
+[0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 1]
+
+Reconstructed Message:
+Hell
+ÀoP|&öw2an
+
+Bits per Word: 2.0000
+
+Perplexity (PPL): 22.4926
+
+the average Bits per Word: 2.0000
+
+the average PPL: 22.4926
+
+(stega3) D:\UIR\信息隐藏-从数据的角度研究\StegaText-master-original-version\lyrejection>python main.py
+Binary message: [0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 1, 1, 0, 1, 1, 0, 1]
+Encoding message...
+Dynamic threshold set to: 55.0000
+Dynamic threshold set to: 60.5000
+Dynamic threshold set to: 66.5500
+Dynamic threshold set to: 73.2050
+Dynamic threshold set to: 80.5255
+Dynamic threshold set to: 88.5781
+
+Generated Cover Text:
+By now, many Americans are starting to hear this term in print in the​ form​ of​ the​ term neo-​Nazi​ and the resurgence of​ a term once banned: antisem​itism​.​ We hear so well about​ the​ rise
+
+Decoding message...
+50 []
+
+Decoded Binary Message:
+[0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 1]
+
+Reconstructed Message:
+Hell
+ÀoP|&öw2an
+
+Bits per Word: 2.0000
+
+Perplexity (PPL): 22.4926
+
+the average Bits per Word: 2.0000
+
+the average PPL: 22.4926
+
+(stega3) D:\UIR\信息隐藏-从数据的角度研究\StegaText-master-original-version\lyrejection>python main.py
+Binary message: [0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 1, 1, 0, 1, 1, 0, 1]
+Encoding message...
+Dynamic threshold set to: 55.0000
+Dynamic threshold set to: 60.5000
+Dynamic threshold set to: 66.5500
+Dynamic threshold set to: 73.2050
+Dynamic threshold set to: 80.5255
+Dynamic threshold set to: 88.5781
+
+Generated Cover Text:
+By now, many Americans are starting to hear this term in print in the​ form​ of​ the​ term neo-​Nazi​ and the resurgence of​ a term once banned: antisem​itism​.​ We hear so well about​ the​ rise
+
+Decoding message...
+50 []
+By now, many Americans are starting to hear this term in print in the​ form​ of​ the​ term neo-​Nazi​ and the resurgence of​ a term once banned: antisem​itism​.​ We hear so well about​ the​ rise
+
+Decoded Binary Message:
+[0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 1]
+
+Reconstructed Message:
+Hell
+ÀoP|&öw2an
+
+Bits per Word: 2.0000
+
+Perplexity (PPL): 22.4926
+
+the average Bits per Word: 2.0000
+
+the average PPL: 22.4926
+
+(stega3) D:\UIR\信息隐藏-从数据的角度研究\StegaText-master-original-version\lyrejection>python main.py
+Binary message: [0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 1, 1, 0, 1, 1, 0, 1]
+Encoding message...
+Dynamic threshold set to: 55.0000
+Dynamic threshold set to: 60.5000
+Dynamic threshold set to: 66.5500
+Dynamic threshold set to: 73.2050
+Dynamic threshold set to: 80.5255
+Dynamic threshold set to: 88.5781
+
+Generated Cover Text:
+By now, many Americans are starting to hear this term in print in the​ form​ of​ the​ term neo-​Nazi​ and the resurgence of​ a term once banned: antisem​itism​.​ We hear so well about​ the​ rise
+
+Decoding message...
+50 []
+
+Decoded Binary Message:
+[0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 1]
+
+Reconstructed Message:
+Hell
+ÀoP|&öw2an
+
+Bits per Word: 2.0000
+
+Perplexity (PPL): 22.4926
+
+the average Bits per Word: 2.0000
+
+the average PPL: 22.4926
+
+(stega3) D:\UIR\信息隐藏-从数据的角度研究\StegaText-master-original-version\lyrejection>python main.py
+Binary message: [0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 1, 1, 0, 1, 1, 0, 1]
+Encoding message...
+Dynamic threshold set to: 55.0000
+Dynamic threshold set to: 60.5000
+Dynamic threshold set to: 66.5500
+Dynamic threshold set to: 73.2050
+Dynamic threshold set to: 80.5255
+Dynamic threshold set to: 88.5781
+
+Generated Cover Text:
+By now, many Americans are starting to hear this term in print in the​ form​ of​ the​ term neo-​Nazi​ and the resurgence of​ a term once banned: antisem​itism​.​ We hear so well about​ the​ rise
+
+Decoding message...
+50 []
+
+Decoded Binary Message:
+[0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 1]
+
+Reconstructed Message:
+Hell
+ÀoP|&öw2an
+
+Bits per Word: 2.6667
+
+Perplexity (PPL): 22.4926
+
+the average Bits per Word: 2.6667
+
+the average PPL: 22.4926
+
+(stega3) D:\UIR\信息隐藏-从数据的角度研究\StegaText-master-original-version\lyrejection>python main.py
+Binary message: [0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 1, 1, 0, 1, 1, 0, 1]
+Encoding message...
+Dynamic threshold set to: 55.0000
+Dynamic threshold set to: 60.5000
+Dynamic threshold set to: 66.5500
+Dynamic threshold set to: 73.2050
+Dynamic threshold set to: 80.5255
+Dynamic threshold set to: 88.5781
+
+Generated Cover Text:
+By now, many Americans are starting to hear this term in print in the​ form​ of​ the​ term neo-​Nazi​ and the resurgence of​ a term once banned: antisem​itism​.​ We hear so well about​ the​ rise
+
+Decoding message...
+50 []
+
+Decoded Binary Message:
+[0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 1]
+
+Reconstructed Message:
+Hell
+ÀoP|&öw2an
+
+Bits per Word: 2.6667
+
+Perplexity (PPL): 22.4926
+
+the average Bits per Word: 2.6667
+
+the average PPL: 22.4926
+
+(stega3) D:\UIR\信息隐藏-从数据的角度研究\StegaText-master-original-version\lyrejection>python main.py
+Binary message: [0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 1, 1, 0, 1, 1, 0, 1]
+Encoding message...
+Dynamic threshold set to: 55.0000
+Dynamic threshold set to: 60.5000
+Dynamic threshold set to: 66.5500
+Dynamic threshold set to: 73.2050
+Dynamic threshold set to: 80.5255
+Dynamic threshold set to: 88.5781
+
+Generated Cover Text:
+By now, many Americans are starting to hear this term in print in the​ form​ of​ the​ term neo-​Nazi​ and the resurgence of​ a term once banned: antisem​itism​.​ We hear so well about​ the​ rise
+
+Decoding message...
+50 []
+Dynamic threshold set to: 55.0000
+Token 3599 rejected during decoding. Skipping...
+Dynamic threshold set to: 60.5000
+Token 284 rejected during decoding. Skipping...
+Dynamic threshold set to: 66.5500
+Token 3285 rejected during decoding. Skipping...
+Dynamic threshold set to: 73.2050
+Token 428 rejected during decoding. Skipping...
+Dynamic threshold set to: 80.5255
+Token 3381 rejected during decoding. Skipping...
+Dynamic threshold set to: 88.5781
+Token 287 rejected during decoding. Skipping...
+Dynamic threshold set to: 97.4359
+Token 3601 rejected during decoding. Skipping...
+Dynamic threshold set to: 107.1794
+Token 287 rejected during decoding. Skipping...
+Dynamic threshold set to: 117.8974
+Token 262 rejected during decoding. Skipping...
+Dynamic threshold set to: 129.6871
+Token 1296 rejected during decoding. Skipping...
+Dynamic threshold set to: 142.6558
+Token 286 rejected during decoding. Skipping...
+Dynamic threshold set to: 156.9214
+Token 262 rejected during decoding. Skipping...
+Dynamic threshold set to: 172.6136
+Token 3381 rejected during decoding. Skipping...
+Dynamic threshold set to: 189.8749
+Token 19102 rejected during decoding. Skipping...
+Dynamic threshold set to: 208.8624
+Token 12 rejected during decoding. Skipping...
+Dynamic threshold set to: 229.7486
+Token 31343 rejected during decoding. Skipping...
+Dynamic threshold set to: 252.7235
+Token 290 rejected during decoding. Skipping...
+Dynamic threshold set to: 277.9959
+Token 262 rejected during decoding. Skipping...
+Dynamic threshold set to: 305.7955
+Token 39330 rejected during decoding. Skipping...
+Dynamic threshold set to: 336.3750
+Token 286 rejected during decoding. Skipping...
+Dynamic threshold set to: 370.0125
+Token 257 rejected during decoding. Skipping...
+Dynamic threshold set to: 407.0137
+Token 3381 rejected during decoding. Skipping...
+Dynamic threshold set to: 447.7151
+Token 1752 rejected during decoding. Skipping...
+Dynamic threshold set to: 492.4866
+Token 9301 rejected during decoding. Skipping...
+Dynamic threshold set to: 541.7353
+Token 25 rejected during decoding. Skipping...
+Dynamic threshold set to: 595.9088
+Token 33064 rejected during decoding. Skipping...
+Dynamic threshold set to: 655.4997
+Token 368 rejected during decoding. Skipping...
+Dynamic threshold set to: 721.0497
+Token 18937 rejected during decoding. Skipping...
+Dynamic threshold set to: 793.1546
+Token 13 rejected during decoding. Skipping...
+Dynamic threshold set to: 872.4701
+Token 775 rejected during decoding. Skipping...
+Dynamic threshold set to: 959.7171
+Token 3285 rejected during decoding. Skipping...
+Dynamic threshold set to: 1055.6888
+Token 523 rejected during decoding. Skipping...
+Dynamic threshold set to: 1161.2577
+Token 880 rejected during decoding. Skipping...
+Dynamic threshold set to: 1277.3835
+Token 546 rejected during decoding. Skipping...
+Dynamic threshold set to: 1405.1218
+Token 262 rejected during decoding. Skipping...
+Dynamic threshold set to: 1545.6340
+Token 4485 rejected during decoding. Skipping...
+
+Decoded Binary Message:
+[]
+
+Reconstructed Message:
+
+
+Bits per Word: 2.6667
+Traceback (most recent call last):
+  File "main.py", line 144, in <module>
+    main()
+  File "main.py", line 135, in main
+    bpw, ppl = test_single(**params)
+  File "main.py", line 97, in test_single
+    ppl = evaluator.calculate_avg_ppl()
+  File "D:\UIR\信息隐藏-从数据的角度研究\StegaText-master-original-version\lyrejection\evaluator.py", line 186, in calculate_avg_ppl
+    ppl = self._calculate_perplexity_from_log_probs(self.all_log_list)
+  File "D:\UIR\信息隐藏-从数据的角度研究\StegaText-master-original-version\lyrejection\evaluator.py", line 201, in _calculate_perplexity_from_log_probs
+    avg_log_prob = -sum(log_probs) / len(log_probs)
+ZeroDivisionError: division by zero
+^C
+(stega3) D:\UIR\信息隐藏-从数据的角度研究\StegaText-master-original-version\lyrejection>python main.py
+Binary message: [0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 1, 1, 0, 1, 1, 0, 1]
+Encoding message...
+
+Generated Cover Text:
+By now, many Americans are starting to hear this term in print in the​ most obvious​ and​ understandable waysâĢĶin a couple weeks during election year political discourse,​ as well."
+
+Decoding message...
+50 []
+Dynamic threshold set to: 55.0000
+Token 3910 rejected during decoding. Skipping...
+Dynamic threshold set to: 60.5000
+Token 326 rejected during decoding. Skipping...
+Dynamic threshold set to: 66.5500
+Token 262 rejected during decoding. Skipping...
+Dynamic threshold set to: 73.2050
+Token 2486 rejected during decoding. Skipping...
+Dynamic threshold set to: 80.5255
+Token 3662 rejected during decoding. Skipping...
+Dynamic threshold set to: 88.5781
+Token 468 rejected during decoding. Skipping...
+Dynamic threshold set to: 97.4359
+Token 587 rejected during decoding. Skipping...
+Dynamic threshold set to: 107.1794
+Token 1262 rejected during decoding. Skipping...
+Dynamic threshold set to: 117.8974
+Token 15382 rejected during decoding. Skipping...
+Dynamic threshold set to: 129.6871
+Token 284 rejected during decoding. Skipping...
+Dynamic threshold set to: 142.6558
+Token 1494 rejected during decoding. Skipping...
+Dynamic threshold set to: 156.9214
+Token 3399 rejected during decoding. Skipping...
+Dynamic threshold set to: 172.6136
+Token 319 rejected during decoding. Skipping...
+Dynamic threshold set to: 189.8749
+Token 1605 rejected during decoding. Skipping...
+Dynamic threshold set to: 208.8624
+Token 9260 rejected during decoding. Skipping...
+Dynamic threshold set to: 229.7486
+Token 13 rejected during decoding. Skipping...
+Dynamic threshold set to: 252.7235
+Token 887 rejected during decoding. Skipping...
+Dynamic threshold set to: 277.9959
+Token 262 rejected during decoding. Skipping...
+Dynamic threshold set to: 305.7955
+Token 3662 rejected during decoding. Skipping...
+Dynamic threshold set to: 336.3750
+Token 468 rejected during decoding. Skipping...
+Dynamic threshold set to: 370.0125
+Token 587 rejected during decoding. Skipping...
+Dynamic threshold set to: 407.0137
+Token 1262 rejected during decoding. Skipping...
+Dynamic threshold set to: 447.7151
+Token 15382 rejected during decoding. Skipping...
+Dynamic threshold set to: 492.4866
+Token 284 rejected during decoding. Skipping...
+Dynamic threshold set to: 541.7353
+Token 1494 rejected during decoding. Skipping...
+Dynamic threshold set to: 595.9088
+Token 3399 rejected during decoding. Skipping...
+Dynamic threshold set to: 655.4997
+Token 319 rejected during decoding. Skipping...
+Dynamic threshold set to: 721.0497
+Token 1605 rejected during decoding. Skipping...
+
+Decoded Binary Message:
+[]
+
+Reconstructed Message:
+
+
+Bits per Word: 3.0000
+
+Perplexity (PPL): 3.9279
+
+the average Bits per Word: 3.0000
+
+the average PPL: 3.9279
+
+(stega3) D:\UIR\信息隐藏-从数据的角度研究\StegaText-master-original-version\lyrejection>python main.py
+Binary message: [0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 1, 1, 0, 1, 1, 0, 1]
+Encoding message...
+[14, 16, 17, 30]
+
+Generated Cover Text:
+By now, many Americans are starting to hear this term in print in the​ most obvious​ and​ understandable waysâĢĶin a couple weeks during election year political discourse,​ as well."
+
+Decoding message...
+50 []
+Dynamic threshold set to: 55.0000
+Token 3910 rejected during decoding. Skipping...
+Dynamic threshold set to: 60.5000
+Token 326 rejected during decoding. Skipping...
+Dynamic threshold set to: 66.5500
+Token 262 rejected during decoding. Skipping...
+Dynamic threshold set to: 73.2050
+Token 2486 rejected during decoding. Skipping...
+Dynamic threshold set to: 80.5255
+Token 3662 rejected during decoding. Skipping...
+Dynamic threshold set to: 88.5781
+Token 468 rejected during decoding. Skipping...
+Dynamic threshold set to: 97.4359
+Token 587 rejected during decoding. Skipping...
+Dynamic threshold set to: 107.1794
+Token 1262 rejected during decoding. Skipping...
+Dynamic threshold set to: 117.8974
+Token 15382 rejected during decoding. Skipping...
+Dynamic threshold set to: 129.6871
+Token 284 rejected during decoding. Skipping...
+Dynamic threshold set to: 142.6558
+Token 1494 rejected during decoding. Skipping...
+Dynamic threshold set to: 156.9214
+Token 3399 rejected during decoding. Skipping...
+Dynamic threshold set to: 172.6136
+Token 319 rejected during decoding. Skipping...
+Dynamic threshold set to: 189.8749
+Token 1605 rejected during decoding. Skipping...
+Dynamic threshold set to: 208.8624
+Token 9260 rejected during decoding. Skipping...
+Dynamic threshold set to: 229.7486
+Token 13 rejected during decoding. Skipping...
+Dynamic threshold set to: 252.7235
+Token 887 rejected during decoding. Skipping...
+Dynamic threshold set to: 277.9959
+Token 262 rejected during decoding. Skipping...
+Dynamic threshold set to: 305.7955
+Token 3662 rejected during decoding. Skipping...
+Dynamic threshold set to: 336.3750
+Token 468 rejected during decoding. Skipping...
+Dynamic threshold set to: 370.0125
+Token 587 rejected during decoding. Skipping...
+Dynamic threshold set to: 407.0137
+Token 1262 rejected during decoding. Skipping...
+Dynamic threshold set to: 447.7151
+Token 15382 rejected during decoding. Skipping...
+Dynamic threshold set to: 492.4866
+Token 284 rejected during decoding. Skipping...
+Dynamic threshold set to: 541.7353
+Token 1494 rejected during decoding. Skipping...
+Dynamic threshold set to: 595.9088
+Token 3399 rejected during decoding. Skipping...
+Dynamic threshold set to: 655.4997
+Token 319 rejected during decoding. Skipping...
+Dynamic threshold set to: 721.0497
+Token 1605 rejected during decoding. Skipping...
+
+Decoded Binary Message:
+[]
+
+Reconstructed Message:
+
+
+Bits per Word: 3.0000
+
+Perplexity (PPL): 3.9279
+
+the average Bits per Word: 3.0000
+
+the average PPL: 3.9279
+
+(stega3) D:\UIR\信息隐藏-从数据的角度研究\StegaText-master-original-version\lyrejection>python main.py
+Binary message: [0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 1, 1, 0, 1, 1, 0, 1]
+Encoding message...
+Dynamic threshold set to: 55.0000
+Dynamic threshold set to: 60.5000
+Dynamic threshold set to: 66.5500
+Dynamic threshold set to: 73.2050
+Dynamic threshold set to: 80.5255
+Dynamic threshold set to: 88.5781
+[14, 15, 16, 17, 20, 21, 25, 32, 33, 34, 39, 40]
+
+Generated Cover Text:
+By now, many Americans are starting to hear this term in print in the​ form​ of​ the​ term neo-​Nazi​ and the resurgence of​ a term once banned: antisem​itism​.​ We hear so well about​ the​ rise
+
+Decoding message...
+50 []
+Dynamic threshold set to: 55.0000
+Token 3910 rejected during decoding. Skipping...
+Dynamic threshold set to: 60.5000
+Token 326 rejected during decoding. Skipping...
+Dynamic threshold set to: 66.5500
+Token 262 rejected during decoding. Skipping...
+Dynamic threshold set to: 73.2050
+Token 2486 rejected during decoding. Skipping...
+Dynamic threshold set to: 80.5255
+Token 3662 rejected during decoding. Skipping...
+Dynamic threshold set to: 88.5781
+Token 468 rejected during decoding. Skipping...
+Dynamic threshold set to: 97.4359
+Token 587 rejected during decoding. Skipping...
+Dynamic threshold set to: 107.1794
+Token 1262 rejected during decoding. Skipping...
+Dynamic threshold set to: 117.8974
+Token 15382 rejected during decoding. Skipping...
+Dynamic threshold set to: 129.6871
+Token 284 rejected during decoding. Skipping...
+Dynamic threshold set to: 142.6558
+Token 1494 rejected during decoding. Skipping...
+Dynamic threshold set to: 156.9214
+Token 3399 rejected during decoding. Skipping...
+Dynamic threshold set to: 172.6136
+Token 319 rejected during decoding. Skipping...
+Dynamic threshold set to: 189.8749
+Token 1605 rejected during decoding. Skipping...
+Dynamic threshold set to: 208.8624
+Token 9260 rejected during decoding. Skipping...
+Dynamic threshold set to: 229.7486
+Token 13 rejected during decoding. Skipping...
+Dynamic threshold set to: 252.7235
+Token 887 rejected during decoding. Skipping...
+Dynamic threshold set to: 277.9959
+Token 262 rejected during decoding. Skipping...
+Dynamic threshold set to: 305.7955
+Token 3662 rejected during decoding. Skipping...
+Dynamic threshold set to: 336.3750
+Token 468 rejected during decoding. Skipping...
+Dynamic threshold set to: 370.0125
+Token 587 rejected during decoding. Skipping...
+Dynamic threshold set to: 407.0137
+Token 1262 rejected during decoding. Skipping...
+Dynamic threshold set to: 447.7151
+Token 15382 rejected during decoding. Skipping...
+Dynamic threshold set to: 492.4866
+Token 284 rejected during decoding. Skipping...
+Dynamic threshold set to: 541.7353
+Token 1494 rejected during decoding. Skipping...
+Dynamic threshold set to: 595.9088
+Token 3399 rejected during decoding. Skipping...
+Dynamic threshold set to: 655.4997
+Token 319 rejected during decoding. Skipping...
+Dynamic threshold set to: 721.0497
+Token 1605 rejected during decoding. Skipping...
+Dynamic threshold set to: 793.1546
+Token 9260 rejected during decoding. Skipping...
+Dynamic threshold set to: 872.4701
+Token 329 rejected during decoding. Skipping...
+Dynamic threshold set to: 959.7171
+Token 812 rejected during decoding. Skipping...
+Dynamic threshold set to: 1055.6888
+Token 13 rejected during decoding. Skipping...
+Dynamic threshold set to: 1161.2577
+Token 198 rejected during decoding. Skipping...
+Dynamic threshold set to: 1277.3835
+Token 198 rejected during decoding. Skipping...
+Dynamic threshold set to: 1405.1218
+Token 464 rejected during decoding. Skipping...
+Dynamic threshold set to: 1545.6340
+Token 2486 rejected during decoding. Skipping...
+
+Decoded Binary Message:
+[]
+
+Reconstructed Message:
+
+
+Bits per Word: 2.6667
+
+Perplexity (PPL): 3.6316
+
+the average Bits per Word: 2.6667
+
+the average PPL: 3.6316
+
+(stega3) D:\UIR\信息隐藏-从数据的角度研究\StegaText-master-original-version\lyrejection>python main.py
+Binary message: [0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 1, 1, 0, 1, 1, 0, 1]
+Encoding message...
+Dynamic threshold set to: 55.0000
+Dynamic threshold set to: 60.5000
+Dynamic threshold set to: 66.5500
+Dynamic threshold set to: 73.2050
+Dynamic threshold set to: 80.5255
+Dynamic threshold set to: 88.5781
+[14, 15, 16, 17, 20, 21, 25, 32, 33, 34, 39, 40]
+
+Generated Cover Text:
+By now, many Americans are starting to hear this term in print in the​ form​ of​ the​ term neo-​Nazi​ and the resurgence of​ a term once banned: antisem​itism​.​ We hear so well about​ the​ rise
+
+Decoding message...
+50 []
+set()
+Dynamic threshold set to: 55.0000
+Token 3910 rejected during decoding. Skipping...
+Dynamic threshold set to: 60.5000
+Token 326 rejected during decoding. Skipping...
+Dynamic threshold set to: 66.5500
+Token 262 rejected during decoding. Skipping...
+Dynamic threshold set to: 73.2050
+Token 2486 rejected during decoding. Skipping...
+Dynamic threshold set to: 80.5255
+Token 3662 rejected during decoding. Skipping...
+Dynamic threshold set to: 88.5781
+Token 468 rejected during decoding. Skipping...
+Dynamic threshold set to: 97.4359
+Token 587 rejected during decoding. Skipping...
+Dynamic threshold set to: 107.1794
+Token 1262 rejected during decoding. Skipping...
+Dynamic threshold set to: 117.8974
+Token 15382 rejected during decoding. Skipping...
+Dynamic threshold set to: 129.6871
+Token 284 rejected during decoding. Skipping...
+Dynamic threshold set to: 142.6558
+Token 1494 rejected during decoding. Skipping...
+Dynamic threshold set to: 156.9214
+Token 3399 rejected during decoding. Skipping...
+Dynamic threshold set to: 172.6136
+Token 319 rejected during decoding. Skipping...
+Dynamic threshold set to: 189.8749
+Token 1605 rejected during decoding. Skipping...
+Dynamic threshold set to: 208.8624
+Token 9260 rejected during decoding. Skipping...
+Dynamic threshold set to: 229.7486
+Token 13 rejected during decoding. Skipping...
+Dynamic threshold set to: 252.7235
+Token 887 rejected during decoding. Skipping...
+Dynamic threshold set to: 277.9959
+Token 262 rejected during decoding. Skipping...
+Dynamic threshold set to: 305.7955
+Token 3662 rejected during decoding. Skipping...
+Dynamic threshold set to: 336.3750
+Token 468 rejected during decoding. Skipping...
+Dynamic threshold set to: 370.0125
+Token 587 rejected during decoding. Skipping...
+Dynamic threshold set to: 407.0137
+Token 1262 rejected during decoding. Skipping...
+Dynamic threshold set to: 447.7151
+Token 15382 rejected during decoding. Skipping...
+Dynamic threshold set to: 492.4866
+Token 284 rejected during decoding. Skipping...
+Dynamic threshold set to: 541.7353
+Token 1494 rejected during decoding. Skipping...
+Dynamic threshold set to: 595.9088
+Token 3399 rejected during decoding. Skipping...
+Dynamic threshold set to: 655.4997
+Token 319 rejected during decoding. Skipping...
+Dynamic threshold set to: 721.0497
+Token 1605 rejected during decoding. Skipping...
+Dynamic threshold set to: 793.1546
+Token 9260 rejected during decoding. Skipping...
+Dynamic threshold set to: 872.4701
+Token 329 rejected during decoding. Skipping...
+Dynamic threshold set to: 959.7171
+Token 812 rejected during decoding. Skipping...
+Dynamic threshold set to: 1055.6888
+Token 13 rejected during decoding. Skipping...
+Dynamic threshold set to: 1161.2577
+Token 198 rejected during decoding. Skipping...
+Dynamic threshold set to: 1277.3835
+Token 198 rejected during decoding. Skipping...
+Dynamic threshold set to: 1405.1218
+Token 464 rejected during decoding. Skipping...
+Dynamic threshold set to: 1545.6340
+Token 2486 rejected during decoding. Skipping...
+
+Decoded Binary Message:
+[]
+
+Reconstructed Message:
+
+
+Bits per Word: 2.6667
+
+Perplexity (PPL): 3.6316
+
+the average Bits per Word: 2.6667
+
+the average PPL: 3.6316
+
+(stega3) D:\UIR\信息隐藏-从数据的角度研究\StegaText-master-original-version\lyrejection>python main.py
+Binary message: [0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 1, 1, 0, 1, 1, 0, 1]
+Encoding message...
+Dynamic threshold set to: 55.0000
+Dynamic threshold set to: 60.0000
+Dynamic threshold set to: 60.0000
+Dynamic threshold set to: 60.0000
+Dynamic threshold set to: 60.0000
+Dynamic threshold set to: 60.0000
+Dynamic threshold set to: 60.0000
+Dynamic threshold set to: 60.0000
+[14, 15, 16, 17, 20, 21, 25, 31, 32, 33, 35, 40, 41]
+
+Generated Cover Text:
+By now, many Americans are starting to hear this term in print in the​ form​ of​ the​ term neo-​Nazi​ and the resurgence of​ a term once banned: white​ supremacy​.​ĊĊ​Some politicians used that term​ to​ justify
+
+Decoding message...
+50 []
+['By', 'Ġnow', ',', 'Ġmany', 'ĠAmericans', 'Ġare', 'Ġstarting', 'Ġto', 'Ġhear', 'Ġthis', 'Ġterm', 'Ġin', 'Ġprint', 'Ġin', 'Ġthe', 'âĢĭ', 'Ġform', 'âĢĭ', 'Ġof', 'âĢĭ', 'Ġthe', 'âĢĭ', 'Ġterm', 'Ġneo', '-', 'âĢĭ', 'Nazi', 'âĢĭ', 'Ġand', 'Ġthe', 'Ġresurgence', 'Ġof', 'âĢĭ', 'Ġa', 'Ġterm', 'Ġonce', 'Ġbanned', ':', 'Ġwhite', 'âĢĭ', 'Ġsupremacy', 'âĢĭ', '.', 'âĢĭ', 'Ä', 'Ĭ', 'Ä', 'Ĭ', 'âĢĭ', 'Some', 'Ġpoliticians', 'Ġused', 'Ġthat', 'Ġterm', 'âĢĭ', 'Ġto', 'âĢĭ', 'Ġjustify']
+set()
+Dynamic threshold set to: 55.0000
+Token 3910 rejected during decoding. Skipping...
+Dynamic threshold set to: 60.0000
+Token 326 rejected during decoding. Skipping...
+Dynamic threshold set to: 60.0000
+Token 262 rejected during decoding. Skipping...
+Dynamic threshold set to: 60.0000
+Token 2486 rejected during decoding. Skipping...
+Dynamic threshold set to: 60.0000
+Token 3662 rejected during decoding. Skipping...
+Dynamic threshold set to: 60.0000
+Token 468 rejected during decoding. Skipping...
+Dynamic threshold set to: 60.0000
+Token 587 rejected during decoding. Skipping...
+Dynamic threshold set to: 60.0000
+Token 1262 rejected during decoding. Skipping...
+Dynamic threshold set to: 60.0000
+Token 15382 rejected during decoding. Skipping...
+Dynamic threshold set to: 60.0000
+Token 284 rejected during decoding. Skipping...
+Dynamic threshold set to: 60.0000
+Token 1494 rejected during decoding. Skipping...
+Dynamic threshold set to: 60.0000
+Token 3399 rejected during decoding. Skipping...
+Dynamic threshold set to: 60.0000
+Token 319 rejected during decoding. Skipping...
+Dynamic threshold set to: 60.0000
+Token 1605 rejected during decoding. Skipping...
+Dynamic threshold set to: 60.0000
+Token 9260 rejected during decoding. Skipping...
+Dynamic threshold set to: 60.0000
+Token 13 rejected during decoding. Skipping...
+Dynamic threshold set to: 60.0000
+Token 887 rejected during decoding. Skipping...
+Dynamic threshold set to: 60.0000
+Token 262 rejected during decoding. Skipping...
+Dynamic threshold set to: 60.0000
+Token 3662 rejected during decoding. Skipping...
+Dynamic threshold set to: 60.0000
+Token 468 rejected during decoding. Skipping...
+Dynamic threshold set to: 60.0000
+Token 587 rejected during decoding. Skipping...
+Dynamic threshold set to: 60.0000
+Token 1262 rejected during decoding. Skipping...
+Dynamic threshold set to: 60.0000
+Token 15382 rejected during decoding. Skipping...
+Dynamic threshold set to: 60.0000
+Token 284 rejected during decoding. Skipping...
+Dynamic threshold set to: 60.0000
+Token 1494 rejected during decoding. Skipping...
+Dynamic threshold set to: 60.0000
+Token 3399 rejected during decoding. Skipping...
+Dynamic threshold set to: 60.0000
+Token 319 rejected during decoding. Skipping...
+Dynamic threshold set to: 60.0000
+Token 1605 rejected during decoding. Skipping...
+Dynamic threshold set to: 60.0000
+Token 9260 rejected during decoding. Skipping...
+Dynamic threshold set to: 60.0000
+Token 329 rejected during decoding. Skipping...
+Dynamic threshold set to: 60.0000
+Token 812 rejected during decoding. Skipping...
+Dynamic threshold set to: 60.0000
+Token 13 rejected during decoding. Skipping...
+Dynamic threshold set to: 60.0000
+Token 198 rejected during decoding. Skipping...
+Dynamic threshold set to: 60.0000
+Token 198 rejected during decoding. Skipping...
+Dynamic threshold set to: 60.0000
+Token 464 rejected during decoding. Skipping...
+Dynamic threshold set to: 60.0000
+Token 2486 rejected during decoding. Skipping...
+Dynamic threshold set to: 60.0000
+Token 3662 rejected during decoding. Skipping...
+
+Decoded Binary Message:
+[]
+
+Reconstructed Message:
+
+
+Bits per Word: 2.4615
+
+Perplexity (PPL): 3.5147
+
+the average Bits per Word: 2.4615
+
+the average PPL: 3.5147
+
+(stega3) D:\UIR\信息隐藏-从数据的角度研究\StegaText-master-original-version\lyrejection>python test.py
+Tokens: ['This', 'Ġis', 'Ġan', 'Ġexample', 'Ġtext', 'Ġwith', 'Ġa', 'Ġzero', '-', 'width', 'Ġcharacter', 'âĢĭ', 'Ġhere', '.']
+'This'
+'Ġis'
+'Ġan'
+'Ġexample'
+'Ġtext'
+'Ġwith'
+'Ġa'
+'Ġzero'
+'-'
+'width'
+'Ġcharacter'
+'âĢĭ'
+'Ġhere'
+'.'
+
+(stega3) D:\UIR\信息隐藏-从数据的角度研究\StegaText-master-original-version\lyrejection>python test.py
+Tokens: ['This', 'Ġis', 'Ġan', 'Ġexample', 'Ġtext', 'Ġwith', 'Ġa', 'Ġzero', '-', 'width', 'Ġcharacter', 'âĢĭ', 'Ġhere', '.']
+'This'
+'Ġis'
+'Ġan'
+'Ġexample'
+'Ġtext'
+'Ġwith'
+'Ġa'
+'Ġzero'
+'-'
+'width'
+'Ġcharacter'
+'âĢĭ'
+'Ġhere'
+'.'
+
+(stega3) D:\UIR\信息隐藏-从数据的角度研究\StegaText-master-original-version\lyrejection>python main.py
+Binary message: [0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 1, 1, 0, 1, 1, 0, 1]
+Encoding message...
+Dynamic threshold set to: 55.0000
+Dynamic threshold set to: 60.0000
+Dynamic threshold set to: 60.0000
+Dynamic threshold set to: 60.0000
+Dynamic threshold set to: 60.0000
+Dynamic threshold set to: 60.0000
+Dynamic threshold set to: 60.0000
+Dynamic threshold set to: 60.0000
+[14, 15, 16, 17, 20, 21, 25, 31, 32, 33, 35, 40, 41]
+
+Generated Cover Text:
+By now, many Americans are starting to hear this term in print in the​ form​ of​ the​ term neo-​Nazi​ and the resurgence of​ a term once banned: white​ supremacy​.​ĊĊ​Some politicians used that term​ to​ justify
+
+Decoding message...
+50 []
+{36, 37, 8, 9, 10, 11, 14, 15, 19, 25, 26, 27, 31}
+Dynamic threshold set to: 55.0000
+Token 3910 rejected during decoding. Skipping...
+Dynamic threshold set to: 60.0000
+Token 326 rejected during decoding. Skipping...
+Dynamic threshold set to: 60.0000
+Token 262 rejected during decoding. Skipping...
+Dynamic threshold set to: 60.0000
+Token 2486 rejected during decoding. Skipping...
+Dynamic threshold set to: 60.0000
+Token 3662 rejected during decoding. Skipping...
+Dynamic threshold set to: 60.0000
+Token 468 rejected during decoding. Skipping...
+Dynamic threshold set to: 60.0000
+Token 587 rejected during decoding. Skipping...
+Dynamic threshold set to: 60.0000
+Token 1262 rejected during decoding. Skipping...
+Rejecting token at position 8
+Rejecting token at position 9
+Rejecting token at position 10
+Rejecting token at position 11
+Token 2351 rejected during decoding. Skipping...
+Dynamic threshold set to: 60.0000
+Token 4765 rejected during decoding. Skipping...
+Rejecting token at position 14
+Rejecting token at position 15
+Dynamic threshold set to: 60.0000
+Token 12 rejected during decoding. Skipping...
+Dynamic threshold set to: 60.0000
+Token 28718 rejected during decoding. Skipping...
+Dynamic threshold set to: 60.0000
+Token 8542 rejected during decoding. Skipping...
+Rejecting token at position 19
+Dynamic threshold set to: 60.0000
+Token 262 rejected during decoding. Skipping...
+Dynamic threshold set to: 60.0000
+Token 6280 rejected during decoding. Skipping...
+Dynamic threshold set to: 60.0000
+Token 5764 rejected during decoding. Skipping...
+Dynamic threshold set to: 60.0000
+Token 284 rejected during decoding. Skipping...
+Dynamic threshold set to: 60.0000
+Token 5764 rejected during decoding. Skipping...
+Rejecting token at position 25
+Rejecting token at position 26
+Rejecting token at position 27
+Token 198 rejected during decoding. Skipping...
+Dynamic threshold set to: 60.0000
+Token 198 rejected during decoding. Skipping...
+Dynamic threshold set to: 60.0000
+Token 464 rejected during decoding. Skipping...
+Rejecting token at position 31
+Dynamic threshold set to: 60.0000
+Token 508 rejected during decoding. Skipping...
+Dynamic threshold set to: 60.0000
+Token 423 rejected during decoding. Skipping...
+Dynamic threshold set to: 60.0000
+Token 587 rejected during decoding. Skipping...
+Dynamic threshold set to: 60.0000
+Token 11343 rejected during decoding. Skipping...
+Rejecting token at position 36
+
+Decoded Binary Message:
+[0, 0, 0, 0, 1, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1]
+
+Reconstructed Message:
+
+ÀÃm
+
+Bits per Word: 2.4615
+
+Perplexity (PPL): 9.6571
+
+the average Bits per Word: 2.4615
+
+the average PPL: 9.6571
+
+(stega3) D:\UIR\信息隐藏-从数据的角度研究\StegaText-master-original-version\lyrejection>cd D:\UIR\信息隐藏-从数据的角度研究\StegaText-master-original-version\lyrejection
+
+(stega3) D:\UIR\信息隐藏-从数据的角度研究\StegaText-master-original-version\lyrejection>python test.py
+Tokens: ['This', 'Ġis', 'Ġan', 'Ġexample', 'Ġtext', 'Ġwith', 'Ġa', 'Ġzero', 'âĢĭ', '-', 'width', 'Ġcharacter', 'âĢĭ', 'Ġhere', '.']
+{1, 4}
+
+(stega3) D:\UIR\信息隐藏-从数据的角度研究\StegaText-master-original-version\lyrejection>python main.py
+Binary message: [0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 1, 1, 0, 1, 1, 0, 1]
+Encoding message...
+Dynamic threshold set to: 55.0000
+Dynamic threshold set to: 60.5000
+Dynamic threshold set to: 66.5500
+Dynamic threshold set to: 73.2050
+Dynamic threshold set to: 80.5255
+Dynamic threshold set to: 88.5781
+[14, 15, 16, 17, 20, 21, 25, 32, 33, 34, 39, 40]
+
+Generated Cover Text:
+By now, many Americans are starting to hear this term in print in the​ form​ of​ the​ term neo-​Nazi​ and the resurgence of​ a term once banned: antisem​itism​.​ We hear so well about​ the​ rise
+
+Decoding message...
+50 []
+{33, 34, 8, 9, 10, 11, 14, 15, 19, 26, 27, 28}
+Dynamic threshold set to: 55.0000
+Token 3599 rejected during decoding. Skipping...
+Dynamic threshold set to: 60.5000
+Token 284 rejected during decoding. Skipping...
+Dynamic threshold set to: 66.5500
+Token 3285 rejected during decoding. Skipping...
+Dynamic threshold set to: 73.2050
+Token 428 rejected during decoding. Skipping...
+Dynamic threshold set to: 80.5255
+Token 3381 rejected during decoding. Skipping...
+Dynamic threshold set to: 88.5781
+Token 287 rejected during decoding. Skipping...
+Dynamic threshold set to: 97.4359
+Token 3601 rejected during decoding. Skipping...
+Dynamic threshold set to: 107.1794
+Token 287 rejected during decoding. Skipping...
+Token 3381 rejected during decoding. Skipping...
+Dynamic threshold set to: 117.8974
+Token 19102 rejected during decoding. Skipping...
+Dynamic threshold set to: 129.6871
+Token 290 rejected during decoding. Skipping...
+Dynamic threshold set to: 142.6558
+Token 262 rejected during decoding. Skipping...
+Dynamic threshold set to: 156.9214
+Token 39330 rejected during decoding. Skipping...
+Dynamic threshold set to: 172.6136
+Token 257 rejected during decoding. Skipping...
+Dynamic threshold set to: 189.8749
+Token 3381 rejected during decoding. Skipping...
+Dynamic threshold set to: 208.8624
+Token 1752 rejected during decoding. Skipping...
+Dynamic threshold set to: 229.7486
+Token 9301 rejected during decoding. Skipping...
+Dynamic threshold set to: 252.7235
+Token 25 rejected during decoding. Skipping...
+Dynamic threshold set to: 277.9959
+Token 33064 rejected during decoding. Skipping...
+Token 775 rejected during decoding. Skipping...
+Dynamic threshold set to: 305.7955
+Token 3285 rejected during decoding. Skipping...
+Dynamic threshold set to: 336.3750
+Token 523 rejected during decoding. Skipping...
+Dynamic threshold set to: 370.0125
+Token 880 rejected during decoding. Skipping...
+Dynamic threshold set to: 407.0137
+Token 4485 rejected during decoding. Skipping...
+
+Decoded Binary Message:
+[0, 0, 0, 0, 1, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0]
+
+Reconstructed Message:
+
+ÀÉCà
+
+Bits per Word: 2.6667
+
+Perplexity (PPL): 2.2171
+
+the average Bits per Word: 2.6667
+
+the average PPL: 2.2171
+
+(stega3) D:\UIR\信息隐藏-从数据的角度研究\StegaText-master-original-version\lyrejection>python main.py
+Binary message: [0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 1, 1, 0, 1, 1, 0, 1]
+Encoding message...
+Dynamic threshold set to: 55.0000
+Dynamic threshold set to: 60.5000
+Dynamic threshold set to: 66.5500
+Dynamic threshold set to: 73.2050
+Dynamic threshold set to: 80.5255
+Dynamic threshold set to: 88.5781
+[14, 15, 16, 17, 20, 21, 25, 32, 33, 34, 39, 40]
+
+Generated Cover Text:
+By now, many Americans are starting to hear this term in print in the​ form​ of​ the​ term neo-​Nazi​ and the resurgence of​ a term once banned: antisem​itism​.​ We hear so well about​ the​ rise
+
+Decoding message...
+50 []
+{33, 34, 8, 9, 10, 11, 14, 15, 19, 26, 27, 28}
+Traceback (most recent call last):
+  File "main.py", line 144, in <module>
+    main()
+  File "main.py", line 135, in main
+    bpw, ppl = test_single(**params)
+  File "main.py", line 78, in test_single
+    decoded_binary_message = steganography.decode_message(covertext, context, cover_token_ids, evaluator)
+  File "D:\UIR\信息隐藏-从数据的角度研究\StegaText-master-original-version\lyrejection\bin_method.py", line 226, in decode_message
+    decoded_message, output = self._decode_rejection_bin2(token, output, decoded_message, evaluator, reject)
+TypeError: cannot unpack non-iterable NoneType object
+
+(stega3) D:\UIR\信息隐藏-从数据的角度研究\StegaText-master-original-version\lyrejection>python main.py
+Binary message: [0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 1, 1, 0, 1, 1, 0, 1]
+Encoding message...
+Dynamic threshold set to: 55.0000
+Dynamic threshold set to: 60.5000
+Dynamic threshold set to: 66.5500
+Dynamic threshold set to: 73.2050
+Dynamic threshold set to: 80.5255
+Dynamic threshold set to: 88.5781
+[14, 15, 16, 17, 20, 21, 25, 32, 33, 34, 39, 40]
+
+Generated Cover Text:
+By now, many Americans are starting to hear this term in print in the​ form​ of​ the​ term neo-​Nazi​ and the resurgence of​ a term once banned: antisem​itism​.​ We hear so well about​ the​ rise
+
+Decoding message...
+50 []
+{33, 34, 8, 9, 10, 11, 14, 15, 19, 26, 27, 28}
+
+Decoded Binary Message:
+[0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 1, 1, 0, 1, 1, 0, 1]
+
+Reconstructed Message:
+HelloProgram
+
+Bits per Word: 2.6667
+Traceback (most recent call last):
+  File "main.py", line 144, in <module>
+    main()
+  File "main.py", line 135, in main
+    bpw, ppl = test_single(**params)
+  File "main.py", line 97, in test_single
+    ppl = evaluator.calculate_avg_ppl()
+  File "D:\UIR\信息隐藏-从数据的角度研究\StegaText-master-original-version\lyrejection\evaluator.py", line 186, in calculate_avg_ppl
+    ppl = self._calculate_perplexity_from_log_probs(self.all_log_list)
+  File "D:\UIR\信息隐藏-从数据的角度研究\StegaText-master-original-version\lyrejection\evaluator.py", line 201, in _calculate_perplexity_from_log_probs
+    avg_log_prob = -sum(log_probs) / len(log_probs)
+ZeroDivisionError: division by zero
+
+(stega3) D:\UIR\信息隐藏-从数据的角度研究\StegaText-master-original-version\lyrejection>

@@ -1,0 +1,5 @@
+torch==1.4.0
+pip install transformers==2.8.0 -i https://pypi.tuna.tsinghua.edu.cn/simple
+pip install bitarray -i https://pypi.tuna.tsinghua.edu.cn/simple
+pip install tqdm -i https://pypi.tuna.tsinghua.edu.cn/simple
+pip install numpy -i https://pypi.tuna.tsinghua.edu.cn/simple
